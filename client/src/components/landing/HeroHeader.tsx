@@ -4,6 +4,8 @@ interface HeroHeaderProps {
 }
 
 export default function HeroHeader({ phone, services }: HeroHeaderProps) {
+  const baseUrl = import.meta.env.BASE_URL;
+  
   return (
     <header 
       className="w-full pt-8 md:pt-10 pb-12 md:pb-16 px-6 md:px-10 relative overflow-hidden"
@@ -18,7 +20,7 @@ export default function HeroHeader({ phone, services }: HeroHeaderProps) {
       <div 
         className="absolute inset-0 pointer-events-none"
         style={{
-          backgroundImage: `url('/BackgroundHeader.png')`,
+          backgroundImage: `url('${baseUrl}BackgroundHeader.png')`,
           backgroundSize: '150%',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat',
@@ -51,7 +53,7 @@ export default function HeroHeader({ phone, services }: HeroHeaderProps) {
         >
           {/* Main Logo - Hero Focus */}
           <img 
-            src="/9.png"
+            src={`${baseUrl}9.png`}
             alt="CarbonEdge LLC"
             className="mx-auto mb-4 w-[280px] md:w-[360px] lg:w-[420px] h-auto"
             style={{ filter: 'drop-shadow(0 4px 12px rgba(0,0,0,0.5))' }}
