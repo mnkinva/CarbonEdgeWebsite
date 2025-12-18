@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Quiet Current LLC</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content="Quiet Current LLC creates digital tools for gentle growth, better conversations, and everyday joy."
+  />
+  <style>
+    :root {
+      --bg: #0b1517;
+      --bg-soft: #111d21;
+      --accent: #5bc0be;
+      --accent-soft: #3b8686;
+      --text-main: #f7fafb;
+      --text-muted: #a7b6bb;
+      --card: #17252a;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        sans-serif;
+      background: radial-gradient(circle at top, #14232a, var(--bg));
+      color: var(--text-main);
+      line-height: 1.6;
+    }
+
+    .wrapper {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2.5rem 1.5rem 4rem;
+    }
+
+    header {
+      padding: 1.5rem 1.75rem;
+      border-radius: 18px;
+      background: linear-gradient(
+        135deg,
+        rgba(91, 192, 190, 0.16),
+        rgba(11, 21, 23, 0.96)
+      );
+      border: 1px solid rgba(91, 192, 190, 0.35);
+      box-shadow: 0 18px 40px rgba(0, 0, 0, 0.45);
+      backdrop-filter: blur(14px);
+    }
+
+    header h1 {
+      margin: 0 0 0.25rem;
+      font-size: clamp(1.9rem, 4vw, 2.4rem);
+      letter-spacing: 0.03em;
+    }
+
+    header p.tagline {
+      margin: 0 0 0.75rem;
+      font-size: 1rem;
+      color: var(--text-muted);
+    }
+
+    header p.summary {
+      margin: 0;
+      font-size: 0.98rem;
+      max-width: 34rem;
+    }
+
+    main {
+      margin-top: 2rem;
+      display: grid;
+      gap: 1.75rem;
+    }
+
+    section {
+      background: var(--bg-soft);
+      border-radius: 16px;
+      padding: 1.5rem 1.75rem;
+      border: 1px solid rgba(255, 255, 255, 0.02);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+    }
+
+    h2 {
+      margin-top: 0;
+      font-size: 1.2rem;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+
+    .apps-list {
+      display: grid;
+      gap: 1.1rem;
+    }
+
+    .app-card {
+      padding: 0.9rem 1rem;
+      border-radius: 12px;
+      background: radial-gradient(circle at top left, #1f353a, #0f181a);
+      border: 1px solid rgba(255, 255, 255, 0.03);
+    }
+
+    .app-card h3 {
+      margin: 0 0 0.2rem;
+      font-size: 1.02rem;
+    }
+
+    .app-card p {
+      margin: 0;
+      font-size: 0.95rem;
+      color: var(--text-muted);
+    }
+
+    ul.values {
+      list-style: none;
+      padding: 0;
+      margin: 0.25rem 0 0;
+    }
+
+    ul.values li {
+      margin: 0.25rem 0;
+      font-size: 0.95rem;
+    }
+
+    ul.values li span.label {
+      font-weight: 600;
+      color: var(--accent-soft);
+    }
+
+    .contact p {
+      margin: 0.35rem 0;
+      font-size: 0.96rem;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      margin-top: 2rem;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      text-align: center;
+      opacity: 0.85;
+    }
+
+    @media (max-width: 600px) {
+      .wrapper {
+        padding-inline: 1.15rem;
+      }
+      header,
+      section {
+        padding: 1.25rem 1.3rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <h1>Quiet Current LLC</h1>
+      <p class="tagline">Digital tools for gentle growth, better conversations, and everyday joy.</p>
+      <p class="summary">
+        Quiet Current is a small independent studio creating wellness, communication, and
+        humor-driven apps that help people take better care of themselves and each other.
+      </p>
+    </header>
+
+    <main>
+      <section>
+        <h2>What We Build</h2>
+        <div class="apps-list">
+          <div class="app-card">
+            <h3>TulaMoon – Rhythmic Health &amp; Fasting Support</h3>
+            <p>
+              A cycle-aware wellness and fasting companion designed to help women align their
+              habits with their bodies, not against them.
+            </p>
+          </div>
+          <div class="app-card">
+            <h3>PersonaYak – Kinder Conversations with a Little Help</h3>
+            <p>
+              An AI-assisted communication tool that helps people say what they mean—with more
+              clarity, warmth, and understanding.
+            </p>
+          </div>
+          <div class="app-card">
+            <h3>Rate My Poo – Lighthearted Humor &amp; Community</h3>
+            <p>
+              A playful, community-driven app that brings a little laughter to a very human part
+              of life, with a focus on safety, consent, and kindness.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>How We Work</h2>
+        <ul class="values">
+          <li>
+            <span class="label">Gentle over frantic –</span>
+            We design for sustainable change, not burnout.
+          </li>
+          <li>
+            <span class="label">Kindness first –</span>
+            Our products aim to reduce shame, not increase it.
+          </li>
+          <li>
+            <span class="label">Honest communication –</span>
+            We believe better words create better relationships.
+          </li>
+          <li>
+            <span class="label">Playfulness matters –</span>
+            Laughter is a tool for resilience, not a distraction.
+          </li>
+        </ul>
+      </section>
+
+      <section class="contact">
+        <h2>Contact</h2>
+        <p>
+          For questions about our products, partnerships, or press, please contact:
+        </p>
+        <p>
+          Email:
+          <a href="mailto:hello@quietcurrent.life">hello@quietcurrent.life</a>
+          <!-- If your Google Workspace email is different, update it here -->
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      &copy; <span id="year"></span> Quiet Current LLC. All rights reserved.
+    </footer>
+  </div>
+
+  <script>
+    // Set current year in footer
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
