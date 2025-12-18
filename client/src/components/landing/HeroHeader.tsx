@@ -76,11 +76,18 @@ export default function HeroHeader({ phone, services }: HeroHeaderProps) {
           {/* Phone Number */}
           <a 
             href={`tel:${phone.replace(/[^0-9]/g, '')}`}
-            className="block text-[clamp(1.5rem,4vw,2.2rem)] font-bold text-white tracking-wide hover:text-primary transition-colors"
+            className="block text-[clamp(1.5rem,4vw,2.2rem)] font-bold text-white tracking-wide hover:text-primary transition-colors mb-4"
             style={{ textShadow: '0 2px 8px rgba(0,0,0,0.5)' }}
           >
             {phone}
           </a>
+          
+          {/* Location */}
+          <p 
+            className="text-primary text-sm md:text-base font-semibold tracking-wide"
+          >
+            Located near Keysville, VA
+          </p>
         </div>
       </div>
     </header>
